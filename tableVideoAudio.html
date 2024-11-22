@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <!-- посилання на сторінку через iframe -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/LXb3EKWsInQ?si=gVErEhFevS_nX--j"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Додавання аудіо файлу -->
+    <audio controls>
+      <!---- прописуємо обов'язково controls(loop autoplay muted) -->
+      <!----прибираємо src і прописуємо його в source -->
+      <source src="./media/test_audio.mp3" />
+    </audio>
+
+    <!-- Додавання відео файлу аналогічно аудіо -->
+    <video controls>
+      <!---- прописуємо обов'язково controls(loop autoplay muted)-->
+      <!-- краще декілька форматів файлів для різних браузерів .mp4, .webm --><!----браузер обере перший -->
+      <!----прибираємо src і прописуємо його в source -->
+      <source src="./media/test_video.webm" type="video/webm" />
+      <source src="./media/test_video.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Таблиця -->
+    <table>
+      <caption>
+        <!----назва/заголовок таблиці -->
+        TEST TABLE
+      </caption>
+
+      <thead>
+        <!-- --header of table -->
+        <tr>
+          <!-- --row -->
+          <th>No.</th>
+          <th>Full name</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <!-- --table data -->
+          <td>Bill</td>
+          <td>Founder</td>
+          <td>1000$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bill</td>
+          <td>Founder</td>
+          <td>1000$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Bill</td>
+          <td>Founder</td>
+          <td rowspan="2">1000$</td>
+          <!----об'єднання рядків-- для об'єднання стовпців colspan -->
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Bill</td>
+          <td>Founder</td>
+          <!-- <td>1000$</td> --об'єднання рядків -->
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4000$</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

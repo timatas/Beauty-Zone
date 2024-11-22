@@ -1,0 +1,74 @@
+:root {
+  --color-primary-dark: #011c44;
+  --color-brand: #2b7fff;
+}
+
+/* ===Base=== */
+body {
+  color: var(--color-primary-dark);
+}
+ul {
+  list-style-type: none;
+}
+
+/* ===Header==== */
+/*header {
+   background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px); 
+}*/
+/* Link */
+.link {
+  text-decoration-line: none;
+}
+.link:hover {
+  color: var(--color-brand);
+}
+
+/* ===Hero section=== */
+.hero-title {
+  color: var(--color-brand);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 21px; /* 95.455% */
+  text-transform: capitalize;
+  text-decoration-line: none;
+}
+
+h1.hero-title {
+  font-size: 140px;
+  line-height: 114px; /* 81.429% */
+}
+
+.button-order {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 32px;
+  border-color: var(--color-brand);
+  background-color: var(--color-brand);
+  cursor: pointer;
+}
+
+.button-order:hover {
+  background-color: transparent;
+  color: var(--color-brand);
+}
+/* ================ */
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.section-title span {
+  color: var(--color-brand);
+}
+
+/* ===About ous section=== */
+span.title-about-ous {
+  font-size: 64px;
+  line-height: 114px; /* 81.429% */
+  text-transform: capitalize;
+}
