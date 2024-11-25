@@ -1,3 +1,17 @@
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
 :root {
   --color-primary-dark: #011c44;
   --color-brand: #2b7fff;
@@ -6,7 +20,11 @@
 /* ===Base=== */
 body {
   color: var(--color-primary-dark);
+  font-family: sans-serif, "Roboto";
+  font-size: 18px;
+  font-weight: 400;
 }
+
 ul {
   list-style-type: none;
 }
@@ -19,33 +37,43 @@ ul {
 /* Link */
 .link {
   text-decoration-line: none;
+  color: var(--color-primary-dark);
 }
-.link:hover {
+.link:hover,
+.link:focus,
+.link:active {
   color: var(--color-brand);
+  font-weight: 700;
 }
 
-/* ===Hero section=== */
-.hero-title {
+.brand-logo {
   color: var(--color-brand);
+  font-family: "Play", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  line-height: 21px; /* 95.455% */
+  line-height: 0.95;
   text-transform: capitalize;
-  text-decoration-line: none;
 }
 
-h1.hero-title {
+.section-title {
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  color: var(--color-primary-dark);
+    font-weight: 700;
+  line-height: 0.95;
+}
+
+/* === Hero section === */
+h1.brand-logo {
   font-size: 140px;
-  line-height: 114px; /* 81.429% */
+  line-height: 0.8;
 }
 
 .button-order {
   color: #fff;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   border-radius: 32px;
   border-color: var(--color-brand);
   background-color: var(--color-brand);
@@ -56,19 +84,35 @@ h1.hero-title {
   background-color: transparent;
   color: var(--color-brand);
 }
-/* ================ */
-.section-title {
+
+.hero-section-text{
+  font-size: 12px;
+  line-height: 1.5; 
+}
+/*==== About ous section =======*/
+
+span.brand-logo {
+  font-size: 64px;
+}
+
+.about-ous-text{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+ span.brand-text {
+  color: var(--color-brand);
+  font-family: "Play", sans-serif;
   font-size: 64px;
   font-weight: 700;
+  line-height: 0.95;
 }
-
-.section-title span {
-  color: var(--color-brand);
-}
-
-/* ===About ous section=== */
-span.title-about-ous {
-  font-size: 64px;
-  line-height: 114px; /* 81.429% */
+.brand-in-text {
   text-transform: capitalize;
-}
+  font-weight: 600;
+} */
+
+/* ================ 
+
+
