@@ -12,6 +12,10 @@
   src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
 }
 
+* {
+box-sizing: border-box;
+}
+
 :root {
   --color-primary-dark: #011c44;
   --color-brand: #2b7fff;
@@ -25,8 +29,23 @@ body {
   font-weight: 400;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
 ul {
   list-style-type: none;
+}
+
+.section{
+  padding: 48px 0;
+}
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
 }
 
 /* ===Header==== */
@@ -61,15 +80,22 @@ ul {
   color: var(--color-primary-dark);
     font-weight: 700;
   line-height: 0.95;
+  margin-bottom: 48px;
 }
 
 /* === Hero section === */
+.hero-section {
+  padding: 36px 0 126px 0;
+}
+
 h1.brand-logo {
   font-size: 140px;
   line-height: 0.8;
+  margin-bottom: 0;
 }
 
 .button-order {
+  padding: 16px 32px;
   color: #fff;
   font-family: "Roboto";
   font-size: 18px;
