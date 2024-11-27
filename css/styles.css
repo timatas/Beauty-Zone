@@ -110,23 +110,20 @@ h2.brand-logo{
   text-transform: none; 
 }
 .section-title {
-  /* font-family: "Play", sans-serif;
-  font-size: 64px;
-  color: var(--color-primary-dark);
-    font-weight: 700;
-  line-height: 0.95;
-  margin-bottom: 48px; */
-  text-align: center;
+    text-align: center;
 }
 
 /* === Hero section === */
 .hero-section {
   padding: 36px 0 126px 0;
+  background-image: url(../images/image-cosmetologist.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .hero-container{
   padding-left: 240px;
-}
+  }
 
 h1.brand-logo {
   font-size: 140px;
@@ -206,6 +203,13 @@ span.brand-logo {
  
 }
 
+/* ==== Our procedures section ===== */
+.face-image{
+  border-radius: 120px 4px;
+  /* background-image: linear-gradient (     ---error----
+    180deg,rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, var(--color-primary-dark) 101.39%) */
+    }
+
 /* ==== Why we section ===== */
 .menu-list{
   display: flex;
@@ -216,7 +220,6 @@ span.brand-logo {
   .menu-list-item{
     text-align: center;
   }
-
 
 /* ==== Footer ===== */
 footer{
