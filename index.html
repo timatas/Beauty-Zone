@@ -26,9 +26,21 @@
           <address>
            
             <ul class="menu-nav-icon">
-              <li><a class="link" href="tel:+380960000007" >t</a></li>
-              <li><a class="link" href="#" >F</a></li>
-              <li><a class="link" href="#" >I</a></li>
+              <li><a class="link" href="tel:+380960000007" >
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+              </a></li>
+              <li><a class="link" href="#" >
+                <svg class="address-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-facebook">
+                        </use>
+              </svg>
+            </a></li>
+              <li><a class="link" href="#" ><svg class="address-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-instagram">
+                        </use>
+              </svg></a></li>
             </ul>
            
           </address>
@@ -42,7 +54,7 @@
         <div class="hero-container container">
           <p>Косметологічна клініка</p>
         <h1 class="brand-logo" lang="en">beauty zone</h1>
-        <button type="button" class="button-order">Замовити дзвінок</button>
+        <button type="button" class="button-order modal-btn-open">Замовити дзвінок</button>
         <p class="hero-section-text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
         </div>
       </section>
@@ -65,7 +77,13 @@
 
         <div class="about-ous-image">
           <img src="./images/face-after.jpg" alt="Face after proccedure" /> 
+          <svg class="star-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-blue-star"></use>
+          </svg>
           <img src="./images/face-befor.jpg" alt="Face befor proccedure" />
+          <svg class="star-icon" width="64" height="64">
+            <use href="./images/icons.svg#icon-blue-star"></use>
+          </svg>
         </div>
       </div>
        </div>
@@ -74,29 +92,35 @@
       <section class="section" id="why-we-section">
         <div class="container">
           <h2 class="brand-logo section-title">Чому люди <span class="brand-text">обирають нас</span></h2>
-        <ul class="menu-list">
-          <li class="menu-list-item">
-            <article>
-              <!-- icon -->
-              <p>
+        <ul class="why-we-list">
+          <li class="why-we-list-item">
+            <article class="why-we-card">
+              <svg class="menu-icon" width="48" height="48">
+                <use href="./images//icons.svg#icon-osvita"></use>
+              </svg>
+              <p class="why-we-text">
                 Всі наші косметологи мають вищу медичну освіту та стаж роботи
                 від 5 років
               </p>
             </article>
           </li>
-          <li class="menu-list-item">
-            <article>
-              <!-- icon -->
-              <p>
+          <li class="why-we-list-item">
+            <article class="why-we-card">
+              <svg class="menu-icon" width="48" height="48">
+                <use href="./images//icons.svg#icon-invironment"></use>
+              </svg>
+              <p class="why-we-text">
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
               </p>
             </article>
           </li>
-          <li class="menu-list-item">
-            <article>
-              <!-- icon -->
-              <p>
+          <li class="why-we-list-item">
+            <article class="why-we-card">
+              <svg class="menu-icon" width="48" height="48">
+                <use href="./images//icons.svg#icon-meta"></use>
+              </svg>
+              <p class="why-we-text">
                 Наша мета - підкреслити переваги та приховати недоліки, а не
                 переробити
               </p>
@@ -105,9 +129,16 @@
         </ul>
         </div>
       </section>
+
       <section class="section" id="our-procedures-section"">
        <div class="container">
          <h2  class="brand-logo section-title">Наші <span class="brand-text">процедури</span></h2>
+         <div class="our-procedures-container">
+          <button class="arrow-button" type="button">
+          <svg class="icon-arrow" width="22" height="22">
+            <use href="./images//icons.svg#icon-arrow-up2"></use>
+          </svg>
+         </button>
         <ul class="menu-list">
           <li class="menu-list-item">
             <article>
@@ -128,12 +159,21 @@
             </article>
           </li>
         </ul>
+        <button class="arrow-button" type="button">
+          <svg class="icon-arrow" width="22" height="22">
+            <use href="./images//icons.svg#icon-arrow-up2"></use>
+          </svg>
+         </button>
+         </div>
        </div>
       </section>
-      <section class="section" id="contacts-section">
+
+      <section class="contacts-section section" id="contacts-section">
         <div class="container">
-          <h2  class="brand-logo section-title">Як нас <span class="brand-text">знайти</span></h2>
-        <iframe
+         
+            <h2  class="brand-logo section-title">Як нас <span class="brand-text">знайти</span></h2> 
+            <div class="contacts-container">
+        <iframe class="contacts-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4756098573066!2d30.77264847522236!3d50.50671678331265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1732270580777!5m2!1sru!2sua"
           width="605"
           height="481"
@@ -141,16 +181,22 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <form action="">Запишіться безкоштовно та отримайте подарунок</form>
+       <div class="contacts-form">
+        <p>Запишіться безкоштовно та отримайте подарунок</p>
+        <form action=""></form> //form
+       </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-     <div class="container">
+<footer class="footer">
+  <div class="container">
    <div class="footer-container">
-    <nav>
-      <div class="menu-nav">
-      <a class="brand-logo" href="/" lang="en">beauty zone</a>
+    <nav class="footer-nav">
+      <div class="footer-logo">
+        <a class="brand-logo" href="/" lang="en">beauty zone</a>
+      </div>
+      
       <ul class="footer-menu">
         <li><a class="link" href="#about-ous-section" >Про нас</a></li>
         <li><a class="link" href="#why-we-section" >Чому ми</a></li>
@@ -158,8 +204,10 @@
         <li><a class="link" href="#contacts-section" >Контакти</a></li>
       </ul>
     
-    <address>
-      <ul class="footer-menu">
+     </nav>
+
+    <address class="footer-address">
+      <ul class="address-list">
         <li>
           <a class="link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
         </li>
@@ -172,23 +220,41 @@
           >
         </li>
         <ul class="menu-nav-icon">
-          <li><a class="link" href="tel:+380960000007" >t</a></li>
-          <li><a class="link" href="#" >F</a></li>
-          <li><a class="link" href="#" >I</a></li>
+          <li><a class="link" href="tel:+380960000007" >
+            <svg class="address-icon" width="42" height="42">
+              <use href="./images/icons.svg#icon-telephone"></use>
+            </svg>
+          </a></li>
+          <li><a class="link" href="#" >
+            <svg class="address-icon" width="42" height="42">
+            <use href="./images/icons.svg#icon-facebook">
+                    </use>
+          </svg>
+        </a></li>
+          <li><a class="link" href="#" ><svg class="address-icon" width="42" height="42">
+            <use href="./images/icons.svg#icon-instagram">
+                    </use>
+          </svg></a></li>
         </ul>
       </ul>
-    </address>
-    <ul class="footer-menu"">
-      <li>
-        <a class="link" href="#" target="_blank">Політика конфіденційності</a>
-      </li>
-    <li class="color-footer">&copy; 2022 Дані захищені</li>
-    </ul>
-      </div>
-  </nav>
+    
+    <div class="address-info">
+            <a class="link" href="#" target="_blank">Політика конфіденційності</a>
+        <p class="info-text">&copy; 2022 Дані захищені</p>
     </div>
-        </div>
-    </footer>
+  </address>
+
+   </div>      
+  </div>
+</footer>
+
+<div class="backdrop">
+  <div class="modal">
+    <button class="modal-btn-close">Close</button>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
   </body>
 </html>
 
