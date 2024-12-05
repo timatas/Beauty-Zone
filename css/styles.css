@@ -58,15 +58,14 @@ ul {
 }
 
 /* ===Header==== */
-header{
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
  background-color: #f7f3f3; 
  padding: 32px 0;
 }
-
-/* .header-container{
-  display: flex;
-  align-items: center;
-} */
 
 .menu-nav{
   display: flex;
@@ -89,6 +88,7 @@ header{
 .link {
   text-decoration-line: none;
   color: var(--color-primary-dark);
+  transition: color 0.3s;
 }
 .link:hover,
 .link:focus,
@@ -131,7 +131,7 @@ h2.brand-logo{
 
 /* === Hero section === */
 .hero-section {
-  padding: 36px 0 126px 0;
+  padding: 123px 0 126px 0;
   background-image: url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -258,6 +258,14 @@ span.brand-logo {
     text-align: center;
   }
 
+  .our-procedures-card{
+    transition: transform .3s;
+  }
+
+  .our-procedures-card :hover{
+    transform: scale(1.05);
+  }
+
 .face-image{
   border-radius: 120px 4px;
       }
@@ -273,6 +281,10 @@ span.brand-logo {
     padding: 0;
 cursor: pointer;
 border-color: var(--color-primary-dark);
+  }
+
+  .arrow-button.next{
+    transform: rotate(180deg);
   }
 
   .arrow-button:hover{
@@ -361,7 +373,9 @@ footer .address-icon:focus{
   display: flex;
 justify-content: center;
 align-items: center;
+padding: 20px 0;
 background-color: rgba(1, 31, 74, 0.40);
+transition: opacity 0.5s, visibility 0.5s;
  }
 
 .backdrop.is-hidden{
@@ -374,12 +388,60 @@ pointer-events: none;
   position: relative;
   border-radius: 38px;
   background-color: var(--color-primary-dark);
-  width: 720px;
-  height: 688px;
+    width: 100%;
+  max-width: 720px;
+  height: 100%;
+max-height: 688px;
+/* overflow: auto; */
 }
 
 .modal-btn-close{
   position: absolute;
   top: 42px;
   right: 42px;
+}
+
+.modal-form-container{
+ padding: 42px 144px;
+ color: var(--white);
+ overflow: auto;
+}
+
+.title-in-modal{
+  
+  font-size: 64px;
+  text-transform: none; 
+  text-align: center;
+  margin-bottom:  40px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+}
+
+.text-in-modal{
+  font-size: 22px;
+  font-weight: 600;
+    text-align: center;
+    margin-bottom:  32px; 
+}
+
+ .text-in-modal span{
+  color: var(--color-brand);
+}
+
+.modal-form{
+  
+}
+
+
+.form-label{
+  display: block;
+  
+}
+
+.form-input{
+  padding: 18px 32px;
+width: 100%;
+border-radius: 32px;
+border-color: 2px solid var(--color-footer);
+background-color: transparent;
 }
