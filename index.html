@@ -182,8 +182,31 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
        <div class="contacts-form">
-        <p>Запишіться безкоштовно та отримайте подарунок</p>
-        <form action=""></form> //form
+        <p class="text-in-modal">Запишіться <span>безкоштовно</span>  та отримайте подарунок</p>
+        <form class="modal-form" name="modal-form-order" type="text" autocomplete="off" novalidate>
+   
+          <div class="form-field">
+            <label class="form-label" for="user-name">Ваше ім'я та прізвище</label>
+          <input class="form-input"type="text" id="user-name" name="user-name"/>
+          
+          </div>
+    
+          <div class="form-field">
+            <label class="form-label" for="user-tel">Ваш номер телефону</label>
+          <input class="form-input" type="tel" id="user-tel" name="user-tel"/>
+          </div>
+    
+          <div class="form-field">
+            <label class="form-label" for="user-email">Ваша електронна пошта</label>
+          <input class="form-input" type="email" id="user-email" name="user-email"/>
+          </div>
+    
+    <button class="button-order modal-btn-order" type="submit">Записатись безкоштовно</button>
+    
+                <p class="form-text-agree">Натискаючи на кнопку я погоджуюсь 
+            <a class="form-link-agree" href="#"> з політикою конфіденційності</a>
+          </p>
+        </form>
        </div>
           </div>
         </div>
@@ -255,11 +278,12 @@
       <h2 class="title-in-modal"> Замовити дзвінок</h2>
     <p class="text-in-modal">Запишіться <span>безкоштовно</span>  та отримайте подарунок</p>
 
-    <form name="modal-form" type="text" autocomplete="off" novalidate>
+    <form class="modal-form" name="modal-form" type="text" autocomplete="off" novalidate>
    
       <div class="form-field">
         <label class="form-label" for="user-name">Ваше ім'я та прізвище</label>
       <input class="form-input"type="text" id="user-name" name="user-name"/>
+      
       </div>
 
       <div class="form-field">
@@ -272,10 +296,10 @@
       <input class="form-input" type="email" id="user-email" name="user-email"/>
       </div>
 
-<button type="submit">Записатись безкоштовно</button>
+<button class="button-order modal-btn-order" type="submit">Записатись безкоштовно</button>
 
-            <p>Натискаючи на кнопку я погоджуюсь 
-        <a href="#"> з політикою конфіденційності</a>
+            <p class="form-text-agree">Натискаючи на кнопку я погоджуюсь 
+        <a class="form-link-agree" href="#"> з політикою конфіденційності</a>
       </p>
     </form>
     </div>
