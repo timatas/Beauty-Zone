@@ -316,6 +316,36 @@ border-color: var(--color-primary-dark);
     border: none;
   }
 
+  .contacts-form{
+    border-radius: 32px;
+    background-color: var(--color-primary-dark);
+    width: 100%;
+    max-width: 423px;
+    height: 100%;
+    max-height: 481px;
+    padding: 48px 56px;
+    text-align: center;
+    /* overflow: auto; */
+  }
+
+  .text-contacts-form{
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+      
+      margin-bottom:  32px; 
+      color: var(--white);
+  }
+
+  .text-contacts-form span{
+    color: var(--color-brand);
+  }
+
+  .form-field.contact{
+margin-bottom: 16px;
+color: var(--white);
+  }
+
 /* ==== Footer ===== */
 .footer{
   background-color: var(--color-primary-dark);  
@@ -438,9 +468,6 @@ overflow: auto;
       padding: 0 60px;
 }
 
-/* .modal-form:last-child{
-  margin-bottom: 8px;
-} */
 .form-field{
   width: 100%;
   position: relative;
