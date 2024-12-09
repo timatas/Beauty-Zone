@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     background-color: #f7f3f3;
-    padding: 32px 0;
+    padding: 32px;
   }
 
   .header-container{
@@ -13,20 +13,34 @@
     gap: 40px;
   }
   
-  .menu-nav {
+  .header-nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 240px;
-    
+    justify-content: center;
+    flex-grow: 1;
   }
+.header-menu{
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+  //==================//
+  // .menu-nav {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   gap: 240px;
+
+  // }
   
-  .menu-nav-link {
-    display: flex;
-    gap: 56px;
-  }
+  // .menu-nav-link {
+  //   display: flex;
+  //   gap: 56px;
+  // }
   
-  .menu-nav-icon {
-    display: flex;
-    gap: 32px;
-  }
+  // .menu-nav-icon {
+  //   display: flex;
+  //   gap: 32px;
+  // }

@@ -3,7 +3,7 @@
 @import './utils/fonts';
 
 /* ===Header==== */
-@import './components/header';
+@import './layouts/header';
 
 /* Link */
 @import './components/links';
@@ -13,22 +13,22 @@
 @import './components/icons';
 
 /* === Hero section === */
-@import './components/hero-section';
+@import './layouts/hero-section';
 
 /*==== About ous section =======*/
-@import './components/about-ous-section';
+@import './layouts/about-ous-section';
 
 /* ==== Why we section ===== */
-@import './components/why-we-section';
+@import './layouts/why-we-section';
 
 /* ==== Our procedures section ===== */
-@import './components/our-procedures-section';
+@import './layouts/our-procedures-section';
 
 /* ==== Contacts and Map section ===== */
-@import './components/contacts-section';
+@import './layouts/contacts-section';
 
 /* ==== Footer ===== */
-@import './components/footer';
+@import './layouts/footer';
 
 /*===== Modal window ======*/
 @import './components/modal-window';
