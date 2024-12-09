@@ -1,0 +1,77 @@
+.our-procedures-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .menu-list {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .menu-list-item {
+    text-align: center;
+  }
+  
+  .our-procedures-card {
+    position: relative;
+    transition: transform 0.3s;
+    background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      #011c44 101.39%
+    );
+    border-radius: 4px 120px;
+  }
+  
+  .our-procedures-card :hover {
+    transform: scale(1.05);
+  }
+  
+  .face-image {
+    /* position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; */
+    /* border-radius: 120px 4px; */
+  }
+  
+  .our-procedures-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.18;
+    max-width: 152px;
+  }
+  
+  .arrow-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    border-color: var(--color-primary-dark);
+  }
+  
+  .arrow-button.next {
+    transform: rotate(180deg);
+  }
+  
+  .arrow-button:hover {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+  }
+  
+  .icon-arrow {
+    fill: var(--color-primary-dark);
+  }
+  
+  .arrow-button:hover .icon-arrow:hover {
+    fill: var(--white);
+  }

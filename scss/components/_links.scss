@@ -1,0 +1,10 @@
+.link {
+    text-decoration-line: none;
+    color: var(--color-primary-dark);
+    transition: color 0.3s;
+  }
+  .link:hover,
+  .link:focus,
+  .link:active {
+    color: var(--color-brand);
+  }

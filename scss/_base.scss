@@ -1,0 +1,50 @@
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  
+   /* ===Base=== */
+  body {
+    color: var(--color-primary-dark);
+    font-family: sans-serif, "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+  }
+  
+  a,
+  link {
+    display: inline-block;
+    text-decoration-line: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section {
+    padding: 48px 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+
+  .section-title {
+    text-align: center;
+  }

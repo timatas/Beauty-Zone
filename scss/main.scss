@@ -1,0 +1,37 @@
+@import './base';
+@import './utils/variables';
+@import './utils/fonts';
+
+/* ===Header==== */
+@import './components/header';
+
+/* Link */
+@import './components/links';
+
+@import './components/brand-logo';
+
+@import './components/icons';
+
+/* === Hero section === */
+@import './components/hero-section';
+
+/*==== About ous section =======*/
+@import './components/about-ous-section';
+
+/* ==== Why we section ===== */
+@import './components/why-we-section';
+
+/* ==== Our procedures section ===== */
+@import './components/our-procedures-section';
+
+/* ==== Contacts and Map section ===== */
+@import './components/contacts-section';
+
+/* ==== Footer ===== */
+@import './components/footer';
+
+/*===== Modal window ======*/
+@import './components/modal-window';
+
+/*==== Form in modal ====*/
+@import './components/form';

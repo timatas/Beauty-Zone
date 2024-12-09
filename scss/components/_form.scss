@@ -1,0 +1,70 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0 60px;
+  }
+  
+  .form-field {
+    width: 100%;
+    position: relative;
+  }
+  
+  .form-label {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+    /* display: block; --прибираємо, тому що position: absolute*/
+    font-size: 14px;
+    font-weight: 400;
+    transition: transform 0.5s;
+  }
+  
+  /* .form-input:focus + .form-label{
+      transform: translate(-10px, -40px);
+      }  --label після input*/
+  
+  .form-field:focus-within .form-label {
+    transform: translate(-10px, -40px);
+  }
+  
+  .form-input {
+    padding: 18px 32px;
+    width: 100%;
+    max-width: 310px;
+    border-radius: 32px;
+    border-color: 2px solid var(--color-footer);
+    background-color: transparent;
+    outline: auto;
+  }
+  
+  .form-input:focus {
+    background-color: var(--color-footer);
+    border-color: var(--color-footer);
+    outline: none;
+  }
+  
+  /* .modal-btn-order{
+      margin-bottom: 8px;
+    } */
+  
+  .modal-btn-order:hover,
+  .modal-btn-order:focus {
+    border-color: var(--color-footer);
+    background-color: var(--color-footer);
+  }
+  
+  .form-text-agree {
+    color: var(--color-footer);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  .form-link-agree {
+    text-decoration: underline;
+    color: var(--color-footer);
+  }

@@ -1,0 +1,51 @@
+.footer {
+    background-color: var(--color-primary-dark);
+    color: var(--white);
+    padding: 56px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-nav,
+  .footer-address {
+    display: flex;
+    gap: 20px;
+    flex-basis: 50%;
+  }
+  
+  .footer-menu .link,
+  .address-list .link,
+  .address-info .link {
+    color: var(--white);
+    font-size: 16px;
+  }
+  
+  .footer-logo,
+  .footer-menu {
+    flex-grow: 1;
+  }
+  
+  .footer-address {
+    font-style: normal;
+  }
+  .address-list,
+  .address-info {
+    flex-grow: 1;
+  }
+  
+  .info-text {
+    color: var(--color-footer);
+    font-size: 14px;
+  }
+  
+  footer .address-icon {
+    fill: var(--white);
+  }
+  
+  footer .address-icon:hover,
+  footer .address-icon:focus {
+    fill: var(--color-brand);
+  }
