@@ -259,7 +259,10 @@ span.brand-logo {
   }
 
   .our-procedures-card{
+    position: relative;
     transition: transform .3s;
+    background-image: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011C44 101.39%);
+    border-radius: 4px 120px;
   }
 
   .our-procedures-card :hover{
@@ -267,7 +270,20 @@ span.brand-logo {
   }
 
 .face-image{
-  border-radius: 120px 4px;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+  /* border-radius: 120px 4px; */
+      }
+
+      .our-procedures-title{
+        color: var(--white);
+text-align: center;
+font-size: 22px;
+line-height: 1.18;
+max-width: 152px;
       }
 
   .arrow-button{
