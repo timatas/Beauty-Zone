@@ -5,26 +5,27 @@
     width: 100%;
     background-color: #f7f3f3;
     padding: 32px;
-  }
-
-  .header-container{
+    
+    &__container{
     display: flex;
     align-items: center;
     gap: 40px;
   }
-  
-  .header-nav{
+
+  &__nav{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
   }
-.header-menu{
+
+  &__menu{
   display: flex;
   gap: 64px;
   justify-content: center;
   flex-grow: 1;
 }
+  }
 
   //==================//
   // .menu-nav {

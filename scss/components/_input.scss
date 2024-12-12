@@ -1,0 +1,36 @@
+.input{
+    width: 100%;
+    position: relative;
+
+&__label {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+    /* display: block; --прибираємо, тому що position: absolute*/
+    font-size: 14px;
+    font-weight: 400;
+    transition: transform 0.5s;
+  }
+
+  &:focus-within{
+    &__label{
+      transform: translate(-10px, -40px);
+    }
+  }
+
+  &__control {
+    padding: 18px 32px;
+    width: 100%;
+    max-width: 310px;
+    border-radius: 32px;
+    border-color: 2px solid var(--color-footer);
+    background-color: transparent;
+    outline: auto;
+  }
+
+  &__control:focus {
+    background-color: var(--color-footer);
+    border-color: var(--color-footer);
+    outline: none;
+  }
+  }

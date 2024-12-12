@@ -1,16 +1,20 @@
-.why-we-list {
+.why-we-section{
+
+&__list {
     display: flex;
     gap: 56px;
     margin: 0 78px;
   }
-  
-  .why-we-list-item {
+
+  &__item {
     text-align: center;
     flex-basis: calc((100% - 112px) / 3);
     padding: 24px 32px;
     flex-shrink: 0;
   }
-  
-  .menu-icon {
+
+  &__icon{
     fill: var(--color-brand);
   }
+  }
+  

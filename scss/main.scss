@@ -1,6 +1,7 @@
 @import './base';
-@import './utils/variables';
 @import './utils/fonts';
+@import './utils/variables';
+
 
 /* ===Header==== */
 @import './layouts/header';
@@ -26,6 +27,8 @@
 
 /* ==== Contacts and Map section ===== */
 @import './layouts/contacts-section';
+@import './components/input';
+@import './components/form-agree';
 
 /* ==== Footer ===== */
 @import './layouts/footer';

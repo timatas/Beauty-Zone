@@ -16,3 +16,15 @@
     color: var(--color-primary-dark);
     text-transform: none;
   }
+
+  span.brand-logo {
+    font-size: 64px;
+  }
+
+  span.brand-text{
+  color: var(--color-brand);
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: .95;
+  }
